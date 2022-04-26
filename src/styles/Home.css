@@ -1,0 +1,27 @@
+.home_container {
+  /* width: 800px; */
+}
+
+.offer_banner {
+  width: 93vw;
+  margin: 50px;
+  height: 200px;
+  margin-top: 90px;
+}
+.offer_banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .offer_banner {
+    width: 100vw;
+    margin: 2px;
+  }
+  .offer_banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
