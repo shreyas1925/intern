@@ -1,19 +1,19 @@
 import React from 'react'
-import Header from '../components/Header'
 import Carousel from '../components/Carousel'
 import Intro from '../components/Intro'
 import Clothing from '../components/Clothing'
-
 import "../styles/Home.css"
+import Header from '../components/Header'
 
 const Home = () => {
     return (
         <>
+            {/* <NavBar /> */}
             <Header />
             <Carousel />
             <Intro />
             <Clothing />
-            <div className="offer_banner">
+            {/* <div className="offer_banner">
                 <img src="/images/banner.jpg" alt="" />
             </div>
 
@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <footer>Copyright @2022</footer>
+            <footer>Copyright @2022</footer> */}
         </>
     )
 }
