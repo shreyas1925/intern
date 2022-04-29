@@ -23,7 +23,7 @@ const Map = () => {
         <>
             <input type="text" value={cuisine} onChange={(e) => setCuisine(e.target.value)} />
 
-            <input type="btn" value={search} onClick={searchfun} />
+            <input type="button" value={search} onClick={searchfun} />
 
 
         </>
