@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { BrowserRouter as Link } from "react-router-dom";
 import "../styles/clothing.css"
 
-const Clothing = () => {
+const Clothing = ({ categories }) => {
 
   return (
     <Container>
       <h5>Clothing / Fashion </h5>
       <Content>
+
         <Wrap>
           <Link to="">
             <img src="/clothing/man.jpg" alt="" />

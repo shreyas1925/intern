@@ -1,33 +1,29 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const Map = () => {
+// const Restaurants = () => {
 
-    const [cuisine, setCuisine] = useState('cuisine');
-    const [restaurant, setRestaurent] = useState('');
-    const [search, setSearch] = useState('Search');
+//     const [cuisine, setCuisine] = useState('');
+//     const [restaurant, setRestaurant] = useState('');
+//     const [search, setSearch] = useState('Search');
 
-    const searchfun = () => {
-        setSearch("Fetching location...")
+//     const searchfun = () => {
+//         setSearch("Fetching location...")
 
-        navigator.geolocation.getCurrentPosition((pos) => {
+//         navigator.geolocation.getCurrentPosition((pos) => {
 
-            setSearch("Fetching restaurants...")
+//             setSearch("Fetching restaurants...")
+//             var lat = pos.coords.latitude;
+//             var long = pos.coords.longitude;
+//             var url = `https://developers.zomato.com/api/v2.1/search?start=0&count=10&lat=${lat}&long=${long}&radius=5000000&cuisine=${cuisine}`;
 
-            var lat = pos.coords.latitude;
-            var long = pos.coords.longitude;
+//         })
+//     }
+//     return (
+//         <>
+//             <input type="text" value={cuisine} onChange={(e) => setCuisine(e.target.value)} />
+//             <input type="button" value={search} onClick={searchfun} />
+//         </>
+//     )
+// }
 
-            var url = ``
-        })
-    }
-    return (
-        <>
-            <input type="text" value={cuisine} onChange={(e) => setCuisine(e.target.value)} />
-
-            <input type="button" value={search} onClick={searchfun} />
-
-
-        </>
-    )
-}
-
-export default Map
+// export default Restaurants
