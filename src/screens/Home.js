@@ -9,7 +9,7 @@ import Pickup from '../components/Pickup'
 const Home = ({ categories }) => {
     return (
         <>
-            <h1>hi</h1>
+
             {/* <Carousel /> */}
             {/* <Intro /> */}
             {/* <Clothing categories={categories} /> */}

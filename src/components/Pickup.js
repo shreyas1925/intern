@@ -5,7 +5,7 @@ import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 // import styled from "styled-components";
 import TimePicker from 'react-time-picker';
 import "../styles/Pickup.css"
-import ewaste from "./charger.jpg"
+import ewaste from "./ewaste.jpg"
 
 const Pickup = () => {
     const [startDate, setStartDate] = useState(new Date());
@@ -14,12 +14,15 @@ const Pickup = () => {
 
     return (
         <>
+            <div className="banner-img">
+
+            </div>
             <section className="signup">
                 {/* <Fade bottom> */}
                 <div className="container mt-5">
                     <div className="signup-content">
                         <div className="signup-form">
-                            <h2 className="form-title">Pickup E-waste</h2>
+                            <h2 className="form-title">E-waste Pickup</h2>
                             <form
                                 method="POST"
                                 className="register-form"
@@ -84,15 +87,18 @@ const Pickup = () => {
                                         placeholder="Enter your Profession"
                                     />
                                 </div>
+
+
+                                {/* <div className="timepicker">
+                                    <TimePicker onChange={onChange} value={value} />
+                                </div> */}
+
+                                <div className=" form-group">
+                                    <input type="text" placeholder="Location" value={location} onChange={(e) => setLocation(e.target.value)} />
+                                </div>
                                 {/* <div className="form-group"> */}
                                 <DatePicker wrapperClassName="datepicker" selected={startDate} onChange={(date) => setStartDate(date)} />
                                 {/* </div> */}
-                                <div className="timepicker">
-                                    <TimePicker onChange={onChange} value={value} />
-                                </div>
-                                <div className="location">
-                                    <input type="text" placeholder="Location" value={location} onChange={(e) => setLocation(e.target.value)} />
-                                </div>
                                 <div className="form-group ">
                                     <input
                                         type="submit"

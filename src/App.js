@@ -27,7 +27,8 @@ const App = () => {
     <>
       {/* <h1>hi</h1> */}
       {/* <Nav /> */}
-      <Home />
+      {/* <Home /> */}
+      <Map />
       {/* <Home categories={categories} /> */}
       {/* <Products products={products} /> */}
     </>
